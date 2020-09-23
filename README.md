@@ -1,1 +1,1 @@
-# python-inventory
+# python_inventory
