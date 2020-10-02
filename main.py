@@ -13,16 +13,15 @@ Select an action
 """)
 
     while True:
+        action = input("Action: ")
+
         # avoid int parsing error
-        try:
-            action = int(input("Action: "))
-            if action < 1 or action > 6:
-                # throw an error to handle invalid input in the same try-except
-                0/0
-        except:
-            print("Oops! Try again with an action from 1 to 6")
-            continue
-        break
+        if action.isnumeric():
+            action = int(action)
+            if action > 0 and action < 7:
+                break
+
+        print("Oops! Try again with an action from 1 to 6")
 
     # action can only be from 1 to 6
     if action == 1:
