@@ -95,8 +95,8 @@ feedback = {
 
 | **Seasons** |     | **Rating** |     | **Positions** |
 | :---------- | --- | :--------- | --- | :------------ |
-| `"ALL"`     | \|  | `1`        | \|  | `"REGISTER"`  |
-| `"SPRING"`  | \|  | `2`        | \|  | `"MANAGER"`   |
-| `"SUMMER"`  | \|  | `3`        | \|  | `"WAITER"`    |
-| `"FALL"`    | \|  | `4`        | \|  | `"BARISTA"`   |
-| `"WINTER"`  | \|  | `5`        | \|  |               |
+| `"ALL"`     |     | `1`        |     | `"REGISTER"`  |
+| `"SPRING"`  |     | `2`        |     | `"MANAGER"`   |
+| `"SUMMER"`  |     | `3`        |     | `"WAITER"`    |
+| `"FALL"`    |     | `4`        |     | `"BARISTA"`   |
+| `"WINTER"`  |     | `5`        |     |               |
