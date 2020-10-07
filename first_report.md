@@ -8,7 +8,7 @@ Víctor Puga   A01568636
 ## Theme
 
 <div align="center" >
-    <h2>Starbucks Inventory Program</h2>
+    <h3>Starbucks Inventory Program</h3>
     <img 
         height="100" 
         width="100" 
