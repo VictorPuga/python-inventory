@@ -12,7 +12,6 @@ Víctor Puga   A01568636
     <img 
         height="100" 
         width="100" 
-        draggable="false"
         src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"/>
 </div>
 
@@ -34,28 +33,31 @@ Víctor Puga   A01568636
 
 ### Products
 
-| **id** | **name** | **price** | **quantity** | **season** |
-| ------ | :------: | :-------: | :----------: | :--------: |
-| `int`  | `string` |  `float`  |    `int`     |  `string`  |
+| **id** | **name** | **price** | **quantity** | **season** | **type** | **syb_type** |
+| ------ | :------: | :-------: | :----------: | :--------: | :------: | :----------: |
+| `int`  | `string` |  `float`  |    `int`     |  `string`  | `string` |   `string`   |
 
 ```python
 product = {
     "id": 0,
-    "name": "Coffee",
+    "name": "Frappe",
     "price": 20.00,
+    "type": "DRINK",
+    "sub_type": "COLD_COFFEE",
 }
 ```
 
 ### Employees
 
-| **id** | **name** | **position** |
-| ------ | :------: | :----------: |
-| `int`  | `string` |   `string`   |
+| **id** | **name** | **last_name** | **position** |
+| ------ | :------: | :-----------: | :----------: |
+| `int`  | `string` |   `string`    |   `string`   |
 
 ```python
 employee = {
     "id": 0,
-    "name": "Johny",
+    "name": "John",
+    "last_name": "Appleseed",
     "position": "MANAGER",
 }
 ```
@@ -94,10 +96,14 @@ feedback = {
 
 ## Enumerations
 
-| **Seasons** |     | **Rating** |     | **Positions** |
-| :---------- | --- | :--------- | --- | :------------ |
-| `"ALL"`     |     | `1`        |     | `"REGISTER"`  |
-| `"SPRING"`  |     | `2`        |     | `"MANAGER"`   |
-| `"SUMMER"`  |     | `3`        |     | `"WAITER"`    |
-| `"FALL"`    |     | `4`        |     | `"BARISTA"`   |
-| `"WINTER"`  |     | `5`        |     |               |
+| **Seasons** |     | **Rating** |     | **Positions** |     | **Types** |     | **Sub Types**   |
+| :---------- | --- | :--------- | --- | :------------ | --- | :-------- | --- | :-------------- |
+| `"ALL"`     |     | `1`        |     | `"REGISTER"`  |     | `"DRINK"` |     | `"HOT_COFFEE"`  |
+| `"SPRING"`  |     | `2`        |     | `"MANAGER"`   |     | `"FOOD"`  |     | `"HOT_DRINK"`   |
+| `"SUMMER"`  |     | `3`        |     | `"WAITER"`    |     |           |     | `"HOT_DRINK"`   |
+| `"FALL"`    |     | `4`        |     | `"BARISTA"`   |     |           |     | `"COLD_COFFEE"` |
+| `"WINTER"`  |     | `5`        |     |               |     |           |     | `"COLD_DRINK"`  |
+|             |     |            |     |               |     |           |     | `"COLD_DRINK"`  |
+|             |     |            |     |               |     |           |     | `"BREAKFAST"`   |
+|             |     |            |     |               |     |           |     | `"LUNCH"`       |
+|             |     |            |     |               |     |           |     | `"SNACK"`       |
