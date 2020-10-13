@@ -83,23 +83,46 @@ Press enter to finish
 ---
 
 ### 2. Register Storage Products
+
 ```
 Action:2
 --- Register in storage ---
 
 Which product?:
 Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
-  
+
 Recent arrival quantity:_____                     ⇢  Recent arrival quantity: 11234567687
-OKAY. You registered _____ items of _____ product, now there is _____ in stock. 
+OKAY. You registered _____ items of _____ product, now there is _____ in stock.
 
 Press enter to confirm
 Press x to cancel
 Press r to register another product
 ```
 
-
 ### 3. Query Sales Data
+
+```
+Action: 3
+--- Query Sales Data ---
+
+What product is it?:
+- Coffee (1)
+- Tea (2)
+
+Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
+
+Information for NAME
+
+Description: DESCRIPTION
+ID: ID
+Price per unit: PRICE
+Quantity in stock: QUANTITY
+Season: SEASON
+Categories: TYPE, SUB_TYPE
+
+Press enter to confirm
+Press r to search another product
+```
 
 ### 4. Query Inventory Data
 
@@ -117,9 +140,9 @@ In storage
 
 ### Products
 
-| **id** | **name** | **price** | **quantity** | **season** | **type** | **syb_type** |
-| ------ | :------: | :-------: | :----------: | :--------: | :------: | :----------: |
-| `int`  | `string` |  `float`  |    `int`     |  `string`  | `string` |   `string`   |
+| **id** | **name** | **price** | **quantity** | **season** | **type** | **syb_type** | **description** |
+| ------ | :------: | :-------: | :----------: | :--------: | :------: | :----------: | :-------------: |
+| `int`  | `string` |  `float`  |    `int`     |  `string`  | `string` |   `string`   |    `string`     |
 
 ```python
 product = {
@@ -130,6 +153,7 @@ product = {
     "season": "ALL",
     "type": "DRINK",
     "sub_type": "COLD_COFFEE",
+    "description": "..."
 }
 ```
 
