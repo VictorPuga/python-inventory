@@ -91,7 +91,7 @@ Which product?:
 Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
   
 Recent arrival quantity:_____                     ⇢  Recent arrival quantity: 11234567687
-OKAY. You registered _____ items of _____ product, now there is _____ in stock. :)
+OKAY. You registered _____ items of _____ product, now there is _____ in stock. 
 
 Press enter to confirm
 Press x to cancel
