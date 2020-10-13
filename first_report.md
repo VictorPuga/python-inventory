@@ -149,6 +149,14 @@ Press enter to return to main screen
 ```
 
 ### 6. Show Sales by Product
+```
+Name or Id: _____                                  ⇢  Name or Id: Pedro        or      Name or Id: 2
+Creating archive...
+Archive saved as "_____".
+
+Press r to generate another report
+Press enter to return to main screen
+```
 
 ### 7. Show Only Seasonal Products
 
