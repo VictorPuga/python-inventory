@@ -1,3 +1,4 @@
+print(ji)
 
 
 def main():
