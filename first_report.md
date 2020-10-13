@@ -67,7 +67,7 @@ What product is it?:
 - Coffee (1) (3 in stock)
 - Tea (2) (10 in stock)
 
-Name or Id: #                                   ⇢  Name or Id: Cofee        or      Name or Id: 1
+Name or Id: #                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
 
 How many items? #                               ⇢  How many items? 4
 
@@ -83,10 +83,27 @@ Press enter to finish
 ---
 
 ### 2. Register Storage Products
+```
+Action:2
+--- Register in storage ---
+
+Which product?:
+Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
+  
+Recent arrival quantity:_____                     ⇢  Recent arrival quantity: 11234567687
+OKAY. You registered _____ items of _____ product, now there is _____ in stock. :)
+
+Press enter to confirm
+Press x to cancel
+Press r to register another product
+```
+
 
 ### 3. Query Sales Data
 
 ### 4. Query Inventory Data
+
+In storage
 
 ### 5. Show Sales by Employee
 
@@ -109,6 +126,8 @@ product = {
     "id": 0,
     "name": "Frappe",
     "price": 20.00,
+    "quantity": 234567,
+    "season": "ALL",
     "type": "DRINK",
     "sub_type": "COLD_COFFEE",
 }
