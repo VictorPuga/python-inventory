@@ -61,15 +61,15 @@ Who is selling the product?:
 - Juan (1)
 - Pedro (2)
 
-Name or Id: #                                   ⇢   Name or Id: Pedro    or     Name or Id: 2
+Name or Id: #                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
 
 What product is it?:
 - Coffee (1) (3 in stock)
 - Tea (2) (10 in stock)
 
-Name or Id: #                                   ⇢   Name or Id: Cofee    or     Name or Id: 1
+Name or Id: #                                   ⇢  Name or Id: Cofee        or      Name or Id: 1
 
-How many items? #                               ⇢   How many items? 4
+How many items? #                               ⇢  How many items? 4
 
 The order is valid. Calculating total price...
 
@@ -78,7 +78,6 @@ Total price: $80 + ($12.8 tax)
 This order's id is 7
 
 Press enter to finish
-
 ```
 
 ---
