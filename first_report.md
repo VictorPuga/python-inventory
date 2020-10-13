@@ -19,10 +19,10 @@ Víctor Puga   A01568636
 
 - Register sales `(Víctor)`
 - Register storage products `(Eva)`
-- Query sales data `(Víctor)`
 - Query inventory data `(Eva)`
-- Show sales by employee `(Víctor)`
-- Show sales by product `(Eva)`
+- Most sold items `(Eva)`
+- Employees with most sales `(Víctor)`
+- Generate employee's sales report `(Víctor)`
 
 ---
 
@@ -125,15 +125,28 @@ Press r to search another product
 ```
 
 ### 4. Most sold item
+
 ```
 Top 3 most sold product until now:
     1)_____ with _____ units sold
     2)_____ with _____ units sold
     3)_____ with _____ units sold
-Press y to return to main
+Press enter to return to main screen
 ```
 
-### 5. Show Sales by Employee
+### 5. Show Employee with Most Items Sold
+
+```
+Action: 5
+--- Show employees with most items sold ---
+
+Top 3 employees:
+1)_____ with _____ items sold
+2)_____ with _____ items sold
+3)_____ with _____ items sold
+
+Press enter to return to main screen
+```
 
 ### 6. Show Sales by Product
 
