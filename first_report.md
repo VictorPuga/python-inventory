@@ -29,6 +29,74 @@ Víctor Puga   A01568636
 - Show only seasonal products `(Eva)`
 - Customer satisfaction form `(Víctor)`
 
+## Screens
+
+### 0. Main Menu
+
+```
+Select an action
+
+1. Register sale
+2. Register storage products
+3. Query sales data
+4. Query inventory data
+5. Show sales by employee
+6. Show sales by product
+7. Show only seasonal products
+8. Customer satisfaction form
+
+Action: #    ⇢    Action: 2
+```
+
+---
+
+### 1. Register Sales
+
+```
+Action: 1
+
+--- Register sale ---
+
+Who is selling the product?:
+- Juan (1)
+- Pedro (2)
+
+Name or Id: #                                   ⇢   Name or Id: Pedro    or     Name or Id: 2
+
+What product is it?:
+- Coffee (1) (3 in stock)
+- Tea (2) (10 in stock)
+
+Name or Id: #                                   ⇢   Name or Id: Cofee    or     Name or Id: 1
+
+How many items? #                               ⇢   How many items? 4
+
+The order is valid. Calculating total price...
+
+Total price: $80 + ($12.8 tax)
+
+This order's id is 7
+
+Press enter to finish
+
+```
+
+---
+
+### 2. Register Storage Products
+
+### 3. Query Sales Data
+
+### 4. Query Inventory Data
+
+### 5. Show Sales by Employee
+
+### 6. Show Sales by Product
+
+### 7. Show Only Seasonal Products
+
+### 8. Customer Satisfaction Form
+
 ## Data Models
 
 ### Products
