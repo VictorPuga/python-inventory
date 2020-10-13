@@ -124,9 +124,14 @@ Press enter to confirm
 Press r to search another product
 ```
 
-### 4. Query Inventory Data
-
-In storage
+### 4. Most sold item
+```
+Top 3 most sold product until now:
+    1)_____ with _____ units sold
+    2)_____ with _____ units sold
+    3)_____ with _____ units sold
+Press y to return to main
+```
 
 ### 5. Show Sales by Employee
 
