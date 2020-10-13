@@ -159,6 +159,13 @@ Press enter to return to main screen
 ```
 
 ### 7. Show Only Seasonal Products
+```
+Season: _____
+Products available only this season: _____
+
+Press r to search in another season
+Press enter to return to main screen
+```
 
 ### 8. Customer Satisfaction Form
 
