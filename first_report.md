@@ -45,7 +45,7 @@ Select an action
 7. Show only seasonal products
 8. Customer satisfaction form
 
-Action: _____                                       ⇢    Action: 2
+Action: _____                     ⇢  Action: 2
 ```
 
 ### 1. Register Sale
@@ -59,15 +59,15 @@ Who is selling the product?:
 - Juan (1)
 - Pedro (2)
 
-Name or Id: _____                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
+Name or Id: _____                 ⇢  Name or Id: Pedro        or      Name or Id: 2
 
 Which product is it?:
 - Coffee (1) (3 in stock)
 - Tea (2) (10 in stock)
 
-Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
+Name or Id: _____                 ⇢  Name or Id: Coffee        or      Name or Id: 1
 
-How many items? _____                               ⇢  How many items? 4
+How many items? _____             ⇢  How many items? 4
 
 The order is valid. Calculating total price...
 
@@ -89,9 +89,9 @@ Which product is it?:
 - Coffee (1)
 - Tea (2)
 
-Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
+Name or Id: _____                 ⇢  Name or Id: Coffee        or      Name or Id: 1
 
-Recent arrival quantity: _____                      ⇢  Recent arrival quantity: 123456
+Recent arrival quantity: _____    ⇢  Recent arrival quantity: 123456
 OKAY. You registered _____ items of _____ product
 Now there are _____ in stock
 
@@ -109,7 +109,7 @@ What product is it?:
 - Coffee (1)
 - Tea (2)
 
-Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
+Name or Id: _____                 ⇢  Name or Id: Coffee        or      Name or Id: 1
 
 Information for _____
 
@@ -162,7 +162,7 @@ Select an employee?:
 - Juan (1)
 - Pedro (2)
 
-Name or Id: _____                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
+Name or Id: _____                 ⇢  Name or Id: Pedro        or      Name or Id: 2
 
 Creating archive...
 Archive saved as "_____"
