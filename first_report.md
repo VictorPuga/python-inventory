@@ -18,7 +18,7 @@ Víctor Puga   A01568636
 ## Tasks
 
 - Register sales `(Víctor)`
-- Register storage products `(Eva)`
+- Register product arrivals `(Eva)`
 - Query inventory data `(Eva)`
 - Most sold items `(Eva)`
 - Employees with most sales `(Víctor)`
@@ -37,20 +37,20 @@ Víctor Puga   A01568636
 Select an action
 
 1. Register sale
-2. Register storage products
-3. Query sales data
-4. Query inventory data
-5. Show sales by employee
-6. Show sales by product
+2. Register product arrival
+3. Query inventory data
+4. Most sold items
+5. Employees with most sales
+6. Generate sales report
 7. Show only seasonal products
 8. Customer satisfaction form
 
-Action: #    ⇢    Action: 2
+Action: _____                                       ⇢    Action: 2
 ```
 
 ---
 
-### 1. Register Sales
+### 1. Register Sale
 
 ```
 Action: 1
@@ -61,76 +61,84 @@ Who is selling the product?:
 - Juan (1)
 - Pedro (2)
 
-Name or Id: #                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
+Name or Id: _____                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
 
-What product is it?:
+Which product is it?:
 - Coffee (1) (3 in stock)
 - Tea (2) (10 in stock)
 
-Name or Id: #                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
+Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
 
-How many items? #                               ⇢  How many items? 4
+How many items? _____                               ⇢  How many items? 4
 
 The order is valid. Calculating total price...
 
-Total price: $80 + ($12.8 tax)
+Total price: $_____ (+ _____ tax)
 
-This order's id is 7
+This order's id is _____
 
-Press enter to finish
+Press enter to return to main screen
+Press r to register another sale
 ```
 
 ---
 
-### 2. Register Storage Products
+### 2. Register Product Arrival
 
 ```
 Action:2
---- Register in storage ---
+--- Register product arrival ---
 
-Which product?:
-Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
+Which product is it?:
+- Coffee (1)
+- Tea (2)
 
-Recent arrival quantity:_____                     ⇢  Recent arrival quantity: 11234567687
-OKAY. You registered _____ items of _____ product, now there is _____ in stock.
+Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
 
-Press enter to confirm
-Press x to cancel
+Recent arrival quantity: _____                      ⇢  Recent arrival quantity: 123456
+OKAY. You registered _____ items of _____ product
+Now there are _____ in stock
+
+Press enter to return to main screen
 Press r to register another product
 ```
 
-### 3. Query Sales Data
+### 3. Query Inventory Data
 
 ```
 Action: 3
---- Query Sales Data ---
+--- Query inventory data ---
 
 What product is it?:
 - Coffee (1)
 - Tea (2)
 
-Name or Id: _____                                 ⇢  Name or Id: Coffee        or      Name or Id: 1
+Name or Id: _____                                   ⇢  Name or Id: Coffee        or      Name or Id: 1
 
-Information for NAME
+Information for _____
 
-Description: DESCRIPTION
-ID: ID
-Price per unit: PRICE
-Quantity in stock: QUANTITY
-Season: SEASON
-Categories: TYPE, SUB_TYPE
+Description: _____
+Id: _____
+Price per unit: _____
+Quantity in stock: _____
+Season: _____
+Categories: _____, _____
 
-Press enter to confirm
+Press enter to return to main screen
 Press r to search another product
 ```
 
-### 4. Most sold item
+### 4. Most Sold Item
 
 ```
+Action: 4
+--- Most sold items ---
+
 Top 3 most sold product until now:
-    1)_____ with _____ units sold
-    2)_____ with _____ units sold
-    3)_____ with _____ units sold
+1) _____ with _____ units sold
+2) _____ with _____ units sold
+3) _____ with _____ units sold
+
 Press enter to return to main screen
 ```
 
@@ -141,33 +149,74 @@ Action: 5
 --- Show employees with most items sold ---
 
 Top 3 employees:
-1)_____ with _____ items sold
-2)_____ with _____ items sold
-3)_____ with _____ items sold
+1) _____ with _____ items sold
+2) _____ with _____ items sold
+3) _____ with _____ items sold
 
 Press enter to return to main screen
 ```
 
-### 6. Show Sales by Product
+### 6. Generate Sales Report
+
 ```
-Name or Id: _____                                  ⇢  Name or Id: Pedro        or      Name or Id: 2
+Action: 6
+--- Generate employee's sales report ---
+
+Select an employee?:
+- Juan (1)
+- Pedro (2)
+
+Name or Id: _____                                   ⇢  Name or Id: Pedro        or      Name or Id: 2
+
 Creating archive...
-Archive saved as "_____".
+Archive saved as "_____"
 
-Press r to generate another report
 Press enter to return to main screen
+Press r to generate another report
+```
+
+#### Sample output file
+
+```
+| EMPLOYEE NAME |         |             |
+| ------------- | ------- | ----------- |
+| PRODUCT ID    | NAME    | QUANTITY    |
+| PRODUCT ID    | NAME    | QUANTITY    |
+| PRODUCT ID    | NAME    | QUANTITY    |
 ```
 
 ### 7. Show Only Seasonal Products
-```
-Season: _____
-Products available only this season: _____
 
-Press r to search in another season
+```
+Action: 7
+--- Show only seasonal products ---
+
+Season: _____
+
+Products available only this season:
+- _____
+- _____
+- _____
+
 Press enter to return to main screen
+Press r to search in another season
 ```
 
 ### 8. Customer Satisfaction Form
+
+```
+Action: 8
+--- Customer satisfaction form ---
+
+Which is your sale id (it is found on your receipt)? _____
+
+How was our service? (1, 2, 3, 4, 5) _____
+
+Cool. Thanks for giving us your feedback.
+We hope to see you again.
+
+Press enter to return to main screen
+```
 
 ## Data Models
 
