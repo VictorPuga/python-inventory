@@ -48,8 +48,6 @@ Select an action
 Action: _____                                       ⇢    Action: 2
 ```
 
----
-
 ### 1. Register Sale
 
 ```
@@ -80,8 +78,6 @@ This order's id is _____
 Press enter to return to main screen
 Press r to register another sale
 ```
-
----
 
 ### 2. Register Product Arrival
 
