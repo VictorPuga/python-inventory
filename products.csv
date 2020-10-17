@@ -1,0 +1,6 @@
+| **id** | **name** | **price** | **quantity** | **season** | **type** | **syb_type** | **description** |
+0,Coffé Americano,34,50,ALL,DRINK,HOT_COFFEE,Black coffee like my soul
+1,Caramel Macchiato,56,20,ALL,DRINK,COLD_COFFEE,Sweet af it might give you a heart attack or diabetes
+2,Donut,47,20,ALL,FOOD,DESSERT,Just a donnut what do u expect
+3,Pumpkin Spice Latte,69,2,FALL,DRINK,HOT_LATTE,The favorite of Evangelion
+4,Frappe Matcha,120,20,SPRING,DRINK,COLD_DRINK,Matchaaaaaaa
