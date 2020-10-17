@@ -1,47 +1,53 @@
+from utils import safe_input
 
 
 def main():
+    print("\n\n[LOGO]\n\n")
+    print("Welcome to Starbucks")
     print("""
 Select an action
 
-1. SOMETHING...
-2. SOMETHING...
-3. SOMETHING...
-4. SOMETHING...
-5. SOMETHING...
-6. SOMETHING...
+1. Register sale
+2. Register product arrival
+3. Query inventory data
+4. Most sold items
+5. Employees with most sales
+6. Generate sales report
+7. Show only seasonal products
+8. Customer satisfaction form
 """)
 
     while True:
-        action = input("Action: ")
+        # action = input("Action: ")
+        action = safe_input('int_positive', 'Action: ')
 
-        # avoid int parsing error
-        if action.isnumeric():
-            action = int(action)
-            if action > 0 and action < 7:
-                break
+        if action > 0 and action < 9:
+            break
 
-        print("Oops! Try again with an action from 1 to 6")
+        print("Oops! Try again with an action from 1 to 8")
 
     # action can only be from 1 to 6
     if action == 1:
-        print(1)
-        print("You selected SOMETHING")
+        print("--- Register sale ---")
     elif action == 2:
-        print(2)
-        print("You selected SOMETHING")
+        print("--- Register product arrival ---")
     elif action == 3:
-        print(3)
-        print("You selected SOMETHING")
+        print("--- Query inventory data ---")
     elif action == 4:
         print(4)
-        print("You selected SOMETHING")
+        print("--- Most sold items ---")
     elif action == 5:
         print(5)
-        print("You selected SOMETHING")
-    else:
+        print("--- Show employees with most items sold ---")
+    elif action == 6:
         print(6)
-        print("You selected SOMETHING")
+        print("--- Generate employee's sales report ---")
+    elif action == 7:
+        print(7)
+        print("--- Show only seasonal products ---")
+    else:
+        print(8)
+        print("--- Customer satisfaction form ---")
 
     print("Thanks for using python_inventory. Have a great day\n")
 
