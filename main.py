@@ -1,4 +1,9 @@
-from utils import safe_input
+from utils import (
+    safe_input,
+    get_products,
+    get_employees,
+    get_sales
+)
 
 
 def main():
