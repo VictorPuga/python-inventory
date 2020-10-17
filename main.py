@@ -33,7 +33,17 @@ Select an action
 
     # action can only be from 1 to 6
     if action == 1:
-        print("--- Register sale ---")
+        print("--- Register sale ---\n")
+        print("Who is selling the product?")1
+
+        employees = get_employees()
+        print(employees)
+        for e in employees:
+            print(f"- {e['name']} {e['last_name']} ({e['id']})")
+        print()
+        name_or_id = safe_input('string', 'Name or Id: ')
+        print("\nWhich product is it?")
+        products = get_products()
     elif action == 2:
         print("--- Register product arrival ---")
     elif action == 3:
