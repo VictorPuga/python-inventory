@@ -4,6 +4,8 @@ from utils import (
     get_employees,
     get_sales
 )
+print(get_products())
+2/0
 
 
 def main():
