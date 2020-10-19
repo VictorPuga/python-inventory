@@ -30,7 +30,7 @@ def update_products(product_list):
     for p in product_list:
         line = ''
         for k in keys:
-            line += p[k]
+            line += str(p[k])
             if k == keys[-1]:
                 line += ','
             else:
