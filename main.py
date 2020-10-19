@@ -5,6 +5,11 @@ from utils import (
     get_sales
 )
 
+from actions import (
+    register_sale,
+    register_product_arrival
+)
+
 
 def main():
     print("\n\n[LOGO]\n\n")
@@ -33,24 +38,7 @@ Select an action
 
     # action can only be from 1 to 6
     if action == 1:
-        print("--- Register sale ---\n")
-        print("Who is selling the product?")
-
-        employees = get_employees()
-        for e in employees:
-            print(f"- {e['name']} {e['last_name']} ({e['id']})")
-        print()
-
-        name_or_id = safe_input('string', 'Name or Id: ')
-
-        print("\nWhich product is it?")
-        products = get_products()
-
-        for p in products:
-            print("- %s (%s) (%s in stock)" %
-                  (p['name'], p['id'], p['quantity']))
-
-        print()
+        register_sale()
     elif action == 2:
         print("--- Register product arrival ---")
     elif action == 3:

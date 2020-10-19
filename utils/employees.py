@@ -1,9 +1,10 @@
 from .other import dict_from_entries
 
+keys = ('id', 'name', 'last_name', 'position')
+
 
 def get_employees():
 
-    keys = ('id', 'name', 'last_name', 'position')
     employees = []
 
     file = open('employees.csv')

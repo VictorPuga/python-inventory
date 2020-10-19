@@ -1,5 +1,8 @@
-def get_products():
+keys = ('id', 'name', 'price', 'quantity',
+        'season', 'type', 'syb_type', 'description')
 
+
+def get_products():
     data = []
     file = open('products.csv')
 
@@ -20,3 +23,18 @@ def get_products():
 
     file.close()
     return data
+
+
+def update_products(product_list):
+    file = open('products.csv', 'w')
+    for p in product_list:
+        line = ''
+        for k in keys:
+            line += p[k]
+            if k == keys[-1]:
+                line += ','
+            else:
+                line += '\n'
+        file.write(line)
+
+    file.close()
