@@ -5,7 +5,10 @@ from utils import (
     get_sales
 )
 
-from actions import (register_sale)
+from actions import (
+    register_sale,
+    register_product_arrival
+)
 
 
 def main():
