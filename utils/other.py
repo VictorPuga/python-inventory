@@ -20,22 +20,22 @@ def safe_input(input_type, message):
                 return float(value)
 
 
-def find_by_key(dict_array, key, value):
-    for el in dict_array:
+def find_by_key(dict_list, key, value):
+    for el in dict_list:
         if el[key] == value:
             return el
 
 
-def select_by_id_or_name(dict_array, name):
+def select_by_id_or_name(dict_list, name):
     while True:
         selected = None
         name_or_id = safe_input('string', 'Name or Id: ')
         print()
 
         if name_or_id.isdecimal():
-            selected = find_by_key(dict_array, 'id', int(name_or_id))
+            selected = find_by_key(dict_list, 'id', int(name_or_id))
         else:
-            selected = find_by_key(dict_array, 'name', name_or_id)
+            selected = find_by_key(dict_list, 'name', name_or_id)
 
         if selected:
             return selected
