@@ -16,9 +16,7 @@ def get_products():
             "sub_type": spacing[6],
             "description": spacing[7].replace('\n', '')
         }
-
-        # print(line)
-        print(product)
+        data.append(product)
 
     file.close()
     return data
