@@ -1,6 +1,5 @@
 def get_products():
-    values = ('id', 'name', 'price', 'quantity',
-              'season', 'type', 'syb_type', 'description')
+
     data = []
     file = open('products.csv')
 
