@@ -1,5 +1,5 @@
 keys = ('id', 'name', 'price', 'quantity',
-        'season', 'type', 'syb_type', 'description')
+        'season', 'type', 'sub_type', 'description')
 
 
 def get_products():
@@ -31,7 +31,7 @@ def update_products(product_list):
         line = ''
         for k in keys:
             line += str(p[k])
-            if k == keys[-1]:
+            if k != keys[-1]:
                 line += ','
             else:
                 line += '\n'
