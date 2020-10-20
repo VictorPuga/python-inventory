@@ -40,7 +40,7 @@ Select an action
     if action == 1:
         register_sale()
     elif action == 2:
-        print("--- Register product arrival ---")
+        register_product_arrival()
     elif action == 3:
         print("--- Query inventory data ---")
     elif action == 4:
