@@ -47,8 +47,7 @@ Select an action
     elif action == 3:
         query_inventory_data()
     elif action == 4:
-        print(4)
-        print("--- Most sold items ---")
+        most_sold_items()
     elif action == 5:
         employees_with_most_sales()
     elif action == 6:
