@@ -7,7 +7,8 @@ from utils import (
 
 from actions import (
     register_sale,
-    register_product_arrival
+    register_product_arrival,
+    query_inventory_data
 )
 
 
