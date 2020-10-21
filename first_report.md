@@ -108,7 +108,7 @@ Press r to register another product
 Action: 3
 --- Query inventory data ---
 
-What product is it?:
+Which product is it?:
 - Coffee (1)
 - Tea (2)
 

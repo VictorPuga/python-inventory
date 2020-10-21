@@ -10,6 +10,8 @@ from actions import (
     register_product_arrival,
     query_inventory_data
 )
+query_inventory_data()
+454/0
 
 
 def main():
