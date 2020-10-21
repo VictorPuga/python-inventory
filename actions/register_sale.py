@@ -1,10 +1,12 @@
 from utils import (
     safe_input,
+    select_by_id_or_name,
+    today,
     get_products,
     update_products,
     get_employees,
-    select_by_id_or_name,
-    today
+    get_sales,
+    add_sale
 )
 
 
@@ -44,7 +46,7 @@ def register_sale():
     while True:
         quantity = safe_input("int_positive", "How many items? ")
         if quantity > 0 and quantity <= product['quantity']:
-            print("The order is valid. Calculating total price...\n")
+            print("The order is valid. Calculating total price...")
             break
         else:
             print(
@@ -53,11 +55,15 @@ def register_sale():
     # we are updating the reference, so this dictionary is also modified
     # on the products list
     product['quantity'] -= quantity
-    sale['quantity'] = quantity
-    sale['price'] = quantity * product['price']
+    sale['num_products'] = quantity
+    sale['total_price'] = quantity * product['price']
 
-    print("Total price: $%s (+ $%s tax)" %
-          (sale['price'], sale['price'] * 0.16))
+    print("\nTotal price: $%s (+ $%s tax)" %
+          (sale['total_price'], sale['total_price'] * 0.16))
+
+    sale['id'] = len(get_sales())
+
+    print("\nThis order's id is", sale['id'])
 
     update_products(products)
-    print(sale)
+    add_sale(sale)

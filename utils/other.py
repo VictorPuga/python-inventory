@@ -47,3 +47,14 @@ def select_by_id_or_name(dict_list, name):
 def today():
     date = datetime.datetime.now()
     return date.strftime("%x")
+
+
+def dict_to_csv_line(dictionary, keys):
+    line = ''
+    for k in keys:
+        line += str(dictionary[k])
+        if k != keys[-1]:
+            line += ','
+        else:
+            line += '\n'
+    return line
