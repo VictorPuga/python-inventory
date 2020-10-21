@@ -7,7 +7,7 @@ from utils import (
 
 def query_inventory_data():
 
-    print("---Query inventory data---")
+    print("--- Query inventory data ---")
     print("Which product is it?")
 
     list_products = get_products()

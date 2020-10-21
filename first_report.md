@@ -7,11 +7,11 @@ Víctor Puga   A01568636
 
 ## Theme
 
-<div align="center" >
+<div align="center">
     <h3>Starbucks Inventory Program</h3>
     <img 
-        height="100" 
-        width="100" 
+        height="100"
+        width="100"
         src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"/>
 </div>
 
@@ -24,7 +24,7 @@ Víctor Puga   A01568636
 - Employees with most sales `(Víctor)`
 - Generate employee's sales report `(Víctor)`
 
----
+#### Proposed Options
 
 - Show only seasonal products `(Eva)`
 - Customer satisfaction form `(Víctor)`

@@ -10,7 +10,10 @@ from actions import (
     register_product_arrival,
     query_inventory_data,
     employees_with_most_sales,
-    most_sold_items
+    most_sold_items,
+    #
+    #
+    customer_satisfaction_form
 )
 
 
@@ -57,8 +60,7 @@ Select an action
         print(7)
         print("--- Show only seasonal products ---")
     else:
-        print(8)
-        print("--- Customer satisfaction form ---")
+        customer_satisfaction_form()
 
     print("Thanks for using python_inventory. Have a great day\n")
 
