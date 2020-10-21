@@ -1,3 +1,5 @@
+from .other import dict_to_csv_line
+
 keys = ('id', 'name', 'price', 'quantity',
         'season', 'type', 'sub_type', 'description')
 
@@ -28,13 +30,7 @@ def get_products():
 def update_products(product_list):
     file = open('products.csv', 'w')
     for p in product_list:
-        line = ''
-        for k in keys:
-            line += str(p[k])
-            if k != keys[-1]:
-                line += ','
-            else:
-                line += '\n'
+        line = dict_to_csv_line(p, keys)
         file.write(line)
 
     file.close()
