@@ -8,7 +8,8 @@ from utils import (
 from actions import (
     register_sale,
     register_product_arrival,
-    query_inventory_data
+    query_inventory_data,
+    most_sold_items
 )
 
 
