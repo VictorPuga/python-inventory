@@ -10,8 +10,6 @@ from actions import (
     register_product_arrival,
     query_inventory_data
 )
-query_inventory_data()
-454/0
 
 
 def main():
@@ -45,7 +43,7 @@ Select an action
     elif action == 2:
         register_product_arrival()
     elif action == 3:
-        print("--- Query inventory data ---")
+        query_inventory_data()
     elif action == 4:
         print(4)
         print("--- Most sold items ---")

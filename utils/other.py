@@ -22,7 +22,7 @@ def safe_input(input_type, message):
 
 def find_by_key(dict_list, key, value):
     for el in dict_list:
-        if el[key] == value:
+        if str(el[key]).upper() == str(value).upper():
             return el
 
 
