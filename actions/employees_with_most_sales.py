@@ -24,7 +24,7 @@ def employees_with_most_sales():
     top_employees = []
 
     for i in range(3):
-        top_employee = {"employee_id": 0, "products": 0}
+        top_employee = {"employee_id": -1, "products": -1}
 
         for k in products_by_employee:
             total_products = products_by_employee[k]

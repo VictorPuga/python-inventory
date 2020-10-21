@@ -9,6 +9,7 @@ from actions import (
     register_sale,
     register_product_arrival,
     query_inventory_data,
+    employees_with_most_sales,
     most_sold_items
 )
 
@@ -49,8 +50,7 @@ Select an action
         print(4)
         print("--- Most sold items ---")
     elif action == 5:
-        print(5)
-        print("--- Show employees with most items sold ---")
+        employees_with_most_sales()
     elif action == 6:
         print(6)
         print("--- Generate employee's sales report ---")
