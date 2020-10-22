@@ -11,6 +11,12 @@ from utils import (
 
 
 def generate_report():
+    """
+    Generate a report for an employee
+
+    This will write to a .txt file
+    """
+
     print("--- Generate employee's sales report ---")
     print("\nSelect an employee:")
 
@@ -23,6 +29,8 @@ def generate_report():
     print()
 
     employee = select_by_id_or_name(employees, 'employee')
+
+    print("Creating file...")
 
     product_quantities = {}
 
@@ -62,6 +70,6 @@ def generate_report():
         )
         file.write(line)
 
-    print(product_quantities)
-
     file.close()
+
+    print('File saved as "%s"' % filename)
