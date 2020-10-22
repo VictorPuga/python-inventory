@@ -61,15 +61,14 @@ Select an action
     print("\nThanks for using python_inventory. Have a great day\n")
 
 
-print("\n\n[LOGO]\n\n")
-print("Welcome to Starbucks")
+print(" ★ Welcome to Starbucks ★ ")
 
 while True:
     main()
 
-    again = input("Do you want to start again? (y/n) ").strip()[0].lower()
+    again = input("Do you want to start again? (y/n) ").lower()
 
-    if (again == 'y'):
+    if 'y' in again:
         continue
     else:
         print("Cool. See you later ;)\n")
