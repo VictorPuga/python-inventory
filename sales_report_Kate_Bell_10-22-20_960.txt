@@ -1,0 +1,11 @@
+Kate Bell - Register 
+
+|  ID  | NAME                | QUANTITY |
+| ---- | ------------------- | -------- |
+| 0    | Coffé Americano     | 5        |
+| 1    | Caramel Macchiato   | 18       |
+| 2    | Donut               | 0        |
+| 3    | Pumpkin Spice Latte | 0        |
+| 4    | Frappe Matcha       | 0        |
+| 5    | Iced Moka           | 0        |
+| 6    | Hot chocolate       | 0        |
