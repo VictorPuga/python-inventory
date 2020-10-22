@@ -11,13 +11,10 @@ from actions import (
     query_inventory_data,
     employees_with_most_sales,
     most_sold_items,
-    #
+    show_only_seasonal_products,
     generate_report,
-    customer_satisfaction_form,
+    customer_satisfaction_form
 )
-
-generate_report()
-1/0
 
 
 def main():
@@ -59,8 +56,7 @@ Select an action
     elif action == 6:
         generate_report()
     elif action == 7:
-        print(7)
-        print("--- Show only seasonal products ---")
+        show_only_seasonal_products()
     else:
         customer_satisfaction_form()
 

@@ -23,7 +23,7 @@ def most_sold_items():
 
     top_products = []
 
-    for i in range(3):
+    for _i in range(3):
         top_product = {"product_id": -1, "products": -1}
 
         for k in products_sold:
