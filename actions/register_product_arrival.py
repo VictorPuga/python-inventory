@@ -13,7 +13,7 @@ def register_product_arrival():
     """
 
     print("--- Register product arrival ---\n")
-    print("Which product is it?")
+    print("Which product is it?\n")
 
     menu = get_products()
 
@@ -35,8 +35,10 @@ def register_product_arrival():
     chooosen_product['quantity'] += arrival_quantity
 
     # user feedback
-    print('OKAY. You\'ve registered %s items of %s' %
-          (arrival_quantity, chooosen_product['name']))
+    print('OKAY. You\'ve registered %s items of %s' % (
+        arrival_quantity,
+        chooosen_product['name']
+    ))
     print('Now there are %s in stock' % chooosen_product['quantity'])
 
     update_products(menu)
