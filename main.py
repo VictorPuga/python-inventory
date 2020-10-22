@@ -12,9 +12,12 @@ from actions import (
     employees_with_most_sales,
     most_sold_items,
     #
-    #
-    customer_satisfaction_form
+    generate_report,
+    customer_satisfaction_form,
 )
+
+generate_report()
+1/0
 
 
 def main():
@@ -54,8 +57,7 @@ Select an action
     elif action == 5:
         employees_with_most_sales()
     elif action == 6:
-        print(6)
-        print("--- Generate employee's sales report ---")
+        generate_report()
     elif action == 7:
         print(7)
         print("--- Show only seasonal products ---")

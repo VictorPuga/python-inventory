@@ -162,15 +162,15 @@ Press enter to return to main screen
 Action: 6
 --- Generate employee's sales report ---
 
-Select an employee?:
+Select an employee:
 - Juan (1)
 - Pedro (2)
 
 Name or Id: _____                                   ⇢  Name or Id: Pedro
                                                     ⇢  Name or Id: 2
 
-Creating archive...
-Archive saved as "_____"
+Creating file...
+File saved as "_____"
 
 Press enter to return to main screen
 Press r to generate another report
