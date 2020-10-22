@@ -18,8 +18,6 @@ from actions import (
 
 
 def main():
-    print("\n\n[LOGO]\n\n")
-    print("Welcome to Starbucks")
     print("""
 Select an action
 
@@ -60,8 +58,11 @@ Select an action
     else:
         customer_satisfaction_form()
 
-    print("Thanks for using python_inventory. Have a great day\n")
+    print("\nThanks for using python_inventory. Have a great day\n")
 
+
+print("\n\n[LOGO]\n\n")
+print("Welcome to Starbucks")
 
 while True:
     main()
