@@ -5,10 +5,29 @@ keys = ('id', 'name', 'price', 'quantity',
 
 
 def get_products():
-    data = []
+    """
+    Get all products from products.csv
+
+    Returns: 
+        - products (list): dictionary list with product data
+
+    Sample dictionary:
+    ```
+    product = {
+        "id": 0,
+        "name": "Frappe",
+        "price": 20.00,
+        "quantity": 234567,
+        "season": "ALL",
+        "type": "DRINK",
+        "sub_type": "COLD_COFFEE",
+        "description": "What else could you ask for?"
+    }
+    """
+
+    products = []
     file = open('products.csv')
 
-  #  search = input('ID or name of the product?: ')
     for line in file:
         spacing = line.split(',')
         product = {
@@ -19,15 +38,24 @@ def get_products():
             "season": spacing[4],
             "type": spacing[5],
             "sub_type": spacing[6],
+            # remove newline
             "description": spacing[7].replace('\n', '')
         }
-        data.append(product)
-
+        products.append(product)
+    # always close the file
     file.close()
-    return data
+    return products
 
 
 def update_products(product_list):
+    """
+    Update products.csv. This will override the whole file.
+
+    Parameters: 
+        - product_list (list or tuple): new product data
+    """
+
+    # delete everythong and write
     file = open('products.csv', 'w')
     for p in product_list:
         line = dict_to_csv_line(p, keys)

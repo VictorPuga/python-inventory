@@ -42,6 +42,7 @@ def customer_satisfaction_form():
 
     feedback['sale_id'] = sale_id
     feedback['rating'] = rating
+    # last available id
     feedback['id'] = len(get_feedbacks())
 
     add_feedback(feedback)

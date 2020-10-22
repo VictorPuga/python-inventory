@@ -4,14 +4,32 @@ keys = ('id', 'name', 'last_name', 'position')
 
 
 def get_employees():
+    """
+    Read all the employees from employees.csv, and return them.
+
+    Returns:
+        - employees (tuple): dictionary tuple with employee data
+
+    Sample dictionary:
+    ```
+    employee = {
+        "id": 0,
+        "name": "John",
+        "last_name": "Appleseed",
+        "position": "REGISTER"
+    }
+    ```
+    """
 
     employees = []
 
     file = open('employees.csv')
 
     for line in file:
+        # using unpacking syntax
         id, name, last_name, position = line.split(',')
 
+        # use the dict_from_entries function to generate each employee dictionary
         employees.append(dict_from_entries(keys, (
             int(id),
             name,
@@ -21,22 +39,3 @@ def get_employees():
 
     file.close()
     return tuple(employees)
-
-# def get_employees():
-
-#     keys = ('id', 'name', 'last_name', 'position')
-#     employees = []
-
-#     file = open('employees.csv')
-
-#     for line in file:
-#         values = line.split(',')
-#         employees.append({
-#             keys[0]: int(values[0]),
-#             keys[1]: values[1],
-#             keys[2]: values[2],
-#             keys[3]: values[3].rstrip(),
-#         })
-
-#     file.close()
-#     return employees

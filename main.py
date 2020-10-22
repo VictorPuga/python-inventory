@@ -5,6 +5,7 @@ from utils import (
     get_sales
 )
 
+# import the main funcions
 from actions import (
     register_sale,
     register_product_arrival,
@@ -32,7 +33,6 @@ Select an action
 """)
 
     while True:
-        # action = input("Action: ")
         action = safe_input('int_positive', 'Action: ')
 
         if action > 0 and action < 9:
@@ -40,7 +40,7 @@ Select an action
 
         print("Oops! Try again with an action from 1 to 8")
 
-    # action can only be from 1 to 6
+    # action can only be from 1 to 8
     if action == 1:
         register_sale()
     elif action == 2:

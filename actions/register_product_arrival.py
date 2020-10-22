@@ -26,15 +26,16 @@ def register_product_arrival():
 
     chooosen_product = select_by_id_or_name(menu, 'product')
 
-    print("Selected: %s (%s)\n" %
-          (chooosen_product['name'], chooosen_product['id']))
+    print("Selected: %s (%s)\n" % (
+        chooosen_product['name'], chooosen_product['id']
+    ))
 
     arrival_quantity = safe_input('int_positive', 'Recent arrival quantity:')
     print()
 
     chooosen_product['quantity'] += arrival_quantity
 
-    # user feedback
+    # show feedback to the users
     print('OKAY. You\'ve registered %s items of %s' % (
         arrival_quantity,
         chooosen_product['name']

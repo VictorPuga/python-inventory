@@ -6,11 +6,11 @@ def dict_from_entries(keys, values):
     Generate a dictonary from keys and values iterables.
 
     Parameters:
-    - keys (list or tuple): keys for the dictionary
-    - values (list or tuple): values for the dictionary
+        - keys (list or tuple): keys for the dictionary
+        - values (list or tuple): values for the dictionary
 
     Returns:
-    - new_dict (dictionary)
+        - new_dict (dictionary)
     """
 
     new_dict = {}
@@ -24,13 +24,13 @@ def safe_input(input_type, message):
     Ask for input.
 
     Parameters: 
-    - input_type (string): data type for the input. One of:
-        - "string"
-        - "int_positive"
-        - "float_positive"
+        - input_type (string): data type for the input. One of:
+            - "string"
+            - "int_positive"
+            - "float_positive"
 
     Returns:
-    - value (depends on input_type)
+        - value (depends on input_type)
     """
 
     while True:

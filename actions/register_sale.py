@@ -67,8 +67,10 @@ def register_sale():
     sale['num_products'] = quantity
     sale['total_price'] = quantity * product['price']
 
-    print("\nTotal price: $%s (+ $%s tax)" %
-          (sale['total_price'], sale['total_price'] * 0.16))
+    print("\nTotal price: $%s (+ $%s tax)" % (
+        sale['total_price'],
+        sale['total_price'] * 0.16
+    ))
 
     sale['id'] = len(get_sales())
 
