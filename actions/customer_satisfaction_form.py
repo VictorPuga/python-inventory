@@ -8,6 +8,11 @@ from utils import (
 
 
 def customer_satisfaction_form():
+    """
+    Ask a customer for their rating. 
+    Writes a review to feedback.csv
+    """
+
     feedback = {
         "date": today()
     }
@@ -20,6 +25,7 @@ def customer_satisfaction_form():
 
     while True:
         sale_id = safe_input('int_positive', 'Sale id: ')
+        # check if id exists
         if sale_id > -1 and sale_id < total_sales:
             break
         else:

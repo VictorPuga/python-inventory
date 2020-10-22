@@ -11,6 +11,12 @@ from utils import (
 
 
 def register_sale():
+    """
+    Register a new sale.
+
+    This will update products.csv and sales.csv
+    """
+
     sale = {
         "date": today()
     }
@@ -18,6 +24,7 @@ def register_sale():
     print("--- Register sale ---\n")
     print("Who is selling the product?")
 
+    # display employees to the user
     employees = get_employees()
     for e in employees:
         print("- %s (%s)" % (e['name'], e['id']))
@@ -30,6 +37,7 @@ def register_sale():
     print("Which product is it?")
     products = get_products()
 
+    # display products to the user
     for p in products:
         print("- %s (%s) (%s in stock)" %
               (p['name'], p['id'], p['quantity']))
@@ -45,6 +53,7 @@ def register_sale():
     quantity = 0
     while True:
         quantity = safe_input("int_positive", "How many items? ")
+        # check if there are enough items in stock
         if quantity > 0 and quantity <= product['quantity']:
             print("The order is valid. Calculating total price...")
             break
