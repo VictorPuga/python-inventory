@@ -57,8 +57,7 @@ Select an action
         print(6)
         print("--- Generate employee's sales report ---")
     elif action == 7:
-        print(7)
-        print("--- Show only seasonal products ---")
+        show_only_seasonal_products()
     else:
         customer_satisfaction_form()
 

@@ -192,7 +192,13 @@ Press r to generate another report
 Action: 7
 --- Show only seasonal products ---
 
-Season: _____
+ALL 1
+SPRING 2
+SUMMER 4
+FALL 3
+WINTER 4
+
+Select a season: _____
 
 Products available only this season:
 - _____
