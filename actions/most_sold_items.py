@@ -51,7 +51,6 @@ def most_sold_items():
         place += 1
         product = find_by_key(products, 'id', el['product_id'])
         print(" %s) %s with %s units sold" % (
-
             place,
             product['name'],
             el['products']
