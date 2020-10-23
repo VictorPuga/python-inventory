@@ -194,9 +194,9 @@ Action: 7
 
 ALL 1
 SPRING 2
-SUMMER 4
-FALL 3
-WINTER 4
+SUMMER 3
+FALL 4
+WINTER 5
 
 Select a season: _____
 
