@@ -55,7 +55,7 @@ def update_products(product_list):
         - product_list (list or tuple): new product data
     """
 
-    # delete everythong and write
+    # delete everything and write
     file = open('products.csv', 'w')
     for p in product_list:
         line = dict_to_csv_line(p, keys)

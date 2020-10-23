@@ -12,8 +12,9 @@ processes. It had to be done using `Python`.
 ## Project Structure
 
 - `main.py` - Entry point of the program
+- `main_one_file.py` - Alternative of `main.py`. It has all the code in one file
 - `actions/` - Main functions of the program. They are imported to use on `main.py`.
-- `utils/` - Utility functions that are used all around the program.
+- `utils/` - Utility functions that are used all around the program
 - `*.csv` - Companion files that are used as databases
 - `deliverables/` - Files required for the class
 
